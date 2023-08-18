@@ -1,0 +1,17 @@
+/* 
+    # Fonte Nunito
+    ## https://fonts.google.com/specimen/Nunito
+*/
+@font-face {
+    font-family: Nunito;
+    src: local(NunitoBold), url('./../fonte/Nunito/Nunito.ttf');
+}
+
+/* 
+    # Fonte Space Grotesk
+    ## https://fonts.google.com/specimen/Space+Grotesk
+*/
+@font-face {
+    font-family: SpaceGrotesk;
+    src: local(SpaceGroteskLight), url('./../fonte/SpaceGrotesk/SpaceGrotesk.ttf');
+}

@@ -1,0 +1,62 @@
+/* 
+    ==== \ *** / ====
+    => Typograph
+    => v1.0.0
+    ==== \ *** / ====
+*/
+:where(h1, .title-h1) {
+    color: var(--h1_color, var(--color_typograph, hsla(0, 0%, 20%, 1)));
+    font-family: var(--h1_font-family, var(--font-family_primary, var(--font-family_secondary, Arial, Helvetica, sans-serif)));
+    font-size: var(--h1_font-size, var(--font-size_display, 2.5rem));
+    font-weight: var(--h1_font-weight, var(--font-weight_bold, 700));
+    letter-spacing: var(--h1_letter-spacing, var(--letter-spacing_small, 116%));
+    line-height: var(--h1_line-height, var(--line-height_medium, 3%));
+}
+:where(h2, .title-h2) {
+    color: var(--h2_color, var(--color_typograph, hsla(0, 0%, 20%, 1)));
+    font-family: var(--h2_font-family, var(--font-family_primary, var(--font-family_secondary, Arial, Helvetica, sans-serif)));
+    font-size: var(--h2_font-size, var(--font-size_xbig, 2rem));
+    font-weight: var(--h2_font-weight, var(--font-weight_semibold, 600));
+    letter-spacing: var(--h2_letter-spacing, var(--letter-spacing_small, 116%));
+    line-height: var(--h2_line-height, var(--line-height_medium, 3%));
+}
+:where(h3, .title-h3) {
+    color: var(--h3_color, var(--color_typograph, hsla(0, 0%, 20%, 1)));
+    font-family: var(--h3_font-family, var(--font-family_primary, var(--font-family_secondary, Arial, Helvetica, sans-serif)));
+    font-size: var(--h3_font-size, var(--font-size_big, 1.75rem));
+    font-weight: var(--h3_font-weight, var(--font-weight_medium, 500));
+    letter-spacing: var(--h3_letter-spacing, var(--letter-spacing_small, 116%));
+    line-height: var(--h3_line-height, var(--line-height_medium, 3%));
+}
+:where(h4, .title-h4) {
+    color: var(--h4_color, var(--color_typograph, hsla(0, 0%, 20%, 1)));
+    font-family: var(--h4_font-family, var(--font-family_primary, var(--font-family_secondary, Arial, Helvetica, sans-serif)));
+    font-size: var(--h4_font-size, var(--font-size_xlarge, 1.5rem));
+    font-weight: var(--h4_font-weight, var(--font-weight_medium, 400));
+    letter-spacing: var(--h4_letter-spacing, var(--letter-spacing_small, 116%));
+    line-height: var(--h4_line-height, var(--line-height_medium, 3%));
+}
+:where(h5, .title-h5) {
+    color: var(--h5_color, var(--color_typograph, hsla(0, 0%, 20%, 1)));
+    font-family: var(--h5_font-family, var(--font-family_primary, var(--font-family_secondary, Arial, Helvetica, sans-serif)));
+    font-size: var(--h5_font-size, var(--font-size_large, 1.25rem));
+    font-weight: var(--h5_font-weight, var(--font-weight_medium, 400));
+    letter-spacing: var(--h5_letter-spacing, var(--letter-spacing_small, 116%));
+    line-height: var(--h5_line-height, var(--line-height_medium, 3%));
+}
+:where(h6, .title-h6) {
+    color: var(--h6_color, var(--color_typograph, hsla(0, 0%, 20%, 1)));
+    font-family: var(--h6_font-family, var(--font-family_primary, var(--font-family_secondary, Arial, Helvetica, sans-serif)));
+    font-size: var(--h6_font-size, var(--font-size_default, 1rem));
+    font-weight: var(--h6_font-weight, var(--font-weight_medium, 400));
+    letter-spacing: var(--h6_letter-spacing, var(--letter-spacing_small, 116%));
+    line-height: var(--h6_line-height, var(--line-height_medium, 3%));
+}
+:where(p, .text) {
+    color: var(--p_color, var(--color_typograph, hsla(0, 0%, 20%, 1)));
+    font-family: var(--p_font-family, var(--font-family_primary, var(--font-family_secondary, Arial, Helvetica, sans-serif)));
+    font-size: var(--p_font-size, var(--font-size_default, 1rem));
+    font-weight: var(--p_font-weight, var(--font-weight_medium, 400));
+    letter-spacing: var(--p_letter-spacing, var(--letter-spacing_small, 116%));
+    line-height: var(--p_line-height, var(--line-height_medium, 3%));
+}

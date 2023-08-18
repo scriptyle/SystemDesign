@@ -1,0 +1,28 @@
+/* 
+    <Reset /> 
+*/
+@import 'reset.css';
+
+/* 
+    <Root /> 
+*/
+@import 'root.css';
+
+/* 
+    <Fonte>
+        => Nunito
+        => Space Grotesk
+    </ Fonte> 
+*/
+@import 'fonte.css';
+
+/* 
+    <Typograph /> 
+*/
+@import 'typograph.css';
+
+/* 
+    <Components /> 
+*/
+/* => Buttons */
+@import 'buttons.css';

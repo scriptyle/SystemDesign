@@ -1,0 +1,105 @@
+:root {
+    /* 
+        <BorderRadius /> 
+    */
+    --border-radius_none: 0rem;
+    --border-radius_base: 0.25rem;
+    --border-radius_x2: calc(var(--border-radius-base) * 2);
+    --border-radius_x3: calc(var(--border-radius-base) * 3);
+    --border-radius_x4: calc(var(--border-radius-base) * 4);
+    --border-radius_x5: calc(var(--border-radius-base) * 5);
+    --border-radius_x6: calc(var(--border-radius-base) * 6);
+    --border-radius_x7: calc(var(--border-radius-base) * 7);
+    --border-radius_x9: calc(var(--border-radius-base) * 9);
+    --border-radius_pill: 31.25rem;
+    --border-radius_full: 50%;
+
+    /*
+        <Color /> 
+    */
+    /* --color_primary: hsla(220, 100%, 53%, 1); */
+    --color_secondary: hsla(256, 100%, 63%, 1);
+    --color_tertiary: hsla(282, 68%, 37%, 1);
+    --color_typograph: var(--color_neutral-20, hsla(0, 0%, 20%, 1));
+
+    /* => Neutrals */
+    --color_neutral-0: hsla(0, 0%, 0%, 1);
+    --color_neutral-10: hsla(0, 0%, 10%, 1);
+    --color_neutral-20: hsla(0, 0%, 20%, 1);
+    --color_neutral-30: hsla(0, 0%, 30%, 1);
+    --color_neutral-40: hsla(0, 0%, 40%, 1);
+    --color_neutral-50: hsla(0, 0%, 50%, 1);
+    --color_neutral-60: hsla(0, 0%, 60%, 1);
+    --color_neutral-70: hsla(0, 0%, 70%, 1);
+    --color_neutral-80: hsla(0, 0%, 80%, 1);
+    --color_neutral-90: hsla(0, 0%, 90%, 1);
+    --color_neutral-100: hsla(0, 0%, 100%, 1);
+
+    /* => System Action */
+    --color_error: hsla(357, 100%, 59%, 1);
+    --color_success: hsla(140, 63%, 56%, 1);
+    --color_information: hsla(204, 98%, 62%, 1);
+    --color_warning: hsla(49, 100%, 58%, 1);
+
+    /*
+        <FontFamily />
+    */
+    --font-family_primary: SpaceGrotesk;
+    --font-family_secondary: Nunito;
+
+    /* 
+        <FontSize /> 
+    */
+    --font-size_nano: 0.625rem; 
+    --font-size_small: 0.75rem;
+    --font-size_medium: 0.875rem;
+    --font-size_default: 1rem;
+    --font-size_large: 1.25rem;
+    --font-size_xlarge: 1.5rem;
+    --font-size_big: 1.75rem;
+    --font-size_xbig: 2rem;
+    --font-size_display: 2.5rem;
+
+    /* 
+        <FontWeight /> 
+    */
+    --font-weight_light: 300;
+    --font-weight_regular: 400;
+    --font-weight_medium: 500;
+    --font-weight_semibold: 600;
+    --font-weight_bold: 700;
+
+    /* 
+        <LetterSpacing /> 
+    */
+    --letter-spacing_none: 0%;
+    --letter-spacing_minor1: -1%;
+    --letter-spacing_minor2: -2%;
+    --letter-spacing_minor3: -3%;
+    --letter-spacing_minor4: -4%;
+    --letter-spacing_minor5: -5%;
+    --letter-spacing_tiny: 1%;
+    --letter-spacing_small: 2%;
+    --letter-spacing_medium: 3%;
+    --letter-spacing_large: 4%;
+    --letter-spacing_big: 5%;
+
+    /* 
+        <LineHeight /> 
+    */
+    --line-height_default: 100%;
+    --line-height_small: 116%;
+    --line-height_medium: 124%;
+    --line-height_large: 148%;
+    --line-height_big: 172%;
+
+    /* 
+        <Opacity /> 
+    */
+    --opacity_total: 0;
+    --opacity_level-1: 0.16;
+    --opacity_level-2: 0.32;
+    --opacity_level-3: 0.48;
+    --opacity_level-4: 0.80;
+    --opacity_none: 1;
+}
