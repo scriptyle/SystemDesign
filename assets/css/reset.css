@@ -63,7 +63,7 @@ meter {
 }
 
 :where(strong, b) {
-    font-weight: var(--strong_font-weight, var(--font-weight_bold, 700));
+    font-weight: var(--strong_font-weight, var(--font-weight_semibold, 600));
 }
 
 :where([hidden]) {
