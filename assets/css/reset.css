@@ -11,8 +11,17 @@
     font-weight: var(--font-weight_regular);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 ol, ul, menu {
     list-style: none;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 img {
