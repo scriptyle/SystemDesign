@@ -11,6 +11,10 @@
     font-weight: var(--font-weight_regular);
 }
 
+body {
+    font-size: 100%;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -58,7 +62,7 @@ meter {
     content: initial;
 }
 ::selection {
-    background-color: var(--selection_background-color, var(--color_primary, hsla(0, 0%, 70%, 1)));
+    background-color: var(--selection_background-color, var(--color_neutral-7, hsla(0, 0%, 70%, 1)));
     color: var(--selection_color, var(--color_neutral-20, hsla(0, 0%, 20%, 1)));
 }
 
@@ -84,4 +88,24 @@ meter {
 
 :where(dialog:modal) {
     all: revert;
+}
+
+
+/* ----------- */
+.news-card {
+    margin: 50px auto;
+    max-width: 400px;
+    width: 100%;
+}
+.news-card header {
+    margin-bottom: 32px;
+}
+.news-card header img {}
+.news-card .content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.news-card footer {
+    margin-top: 20px;
 }

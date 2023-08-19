@@ -17,9 +17,9 @@
     /*
         <Color /> 
     */
-    /* --color_primary: hsla(220, 100%, 53%, 1); */
-    --color_secondary: hsla(256, 100%, 63%, 1);
-    --color_tertiary: hsla(282, 68%, 37%, 1);
+    /* --color_primary:;
+    --color_secondary:;
+    --color_tertiary:; */
     --color_typograph: var(--color_neutral-20, hsla(0, 0%, 20%, 1));
 
     /* => Neutrals */

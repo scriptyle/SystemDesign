@@ -4,3 +4,27 @@
     => v1.0.0
     ==== \ *** / ====
 */
+:where(button, .bt, input[type="submit"]) {
+    align-items: var(--button_align-items, center);
+    background-color: var(--button_background-color, var(--color_neutral-20, hsla(0, 0%, 20%, 1)));
+    border-color: var(--button_border-color, var(--color_neutral-0, hsla(0, 0%, 0%, 1)));
+    border-radius: var(--button_border-radius, var(--border-radius_base, 0.25rem));
+    border-style: var(--button_border-style, solid);
+    border-width: var(--button_border-width, 0);
+    color: var(--button_color, var(--color_neutral-90, hsla(0, 0%, 90%, 1)));
+    cursor: var(--button_cursor, pointer);
+    display: var(--button_display, flex);
+    font-size: var(--button_font-size, var(--font-size_default, 1rem));
+    gap: var(--button_gap, 26px);
+    justify-content: var(--button_justify-content, center);
+    opacity: var(--button_opacity, var(--opacity_none, 1));
+    padding: var(--button_padding, 14px 26px);
+    pointer-events: var(--button_pointer-events, all);
+    width: var(--button_width, initial);
+}
+:where(button, .bt, input[type="submit"]) > :where(svg, img) {
+    fill: var(--button-icon_fill, transparent);
+    stroke: var(--button-icon_stroke, var(--color_neutral_100, hsla(0, 0%, 100%, 1)));
+    max-width: var(--button-icon_max-width, 16px);
+    width: var(--button-icon_max-width, 100%);
+}
