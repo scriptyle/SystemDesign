@@ -11,7 +11,7 @@
     border-radius: var(--button_border-radius, var(--border-radius_base, 0.25rem));
     border-style: var(--button_border-style, solid);
     border-width: var(--button_border-width, 0);
-    color: var(--button_color, var(--color_neutral-90, hsla(0, 0%, 90%, 1)));
+    color: var(--button_color, var(--color_neutral-100, hsla(0, 0%, 100%, 1)));
     cursor: var(--button_cursor, pointer);
     display: var(--button_display, flex);
     font-size: var(--button_font-size, var(--font-size_default, 1rem));
@@ -27,4 +27,10 @@
     stroke: var(--button-icon_stroke, var(--color_neutral_100, hsla(0, 0%, 100%, 1)));
     max-width: var(--button-icon_max-width, 16px);
     width: var(--button-icon_max-width, 100%);
+}
+:where(button, .bt, input[type="submit"]):where(:hover, :focus, :visited) {
+    --button_background-color: var(--color_neutral-30, hsla(0, 0%, 30%, 1))
+}
+:where(button, .bt, input[type="submit"]):active {
+    --button_background-color: var(--color_neutral-40, hsla(0, 0%, 40%, 1))
 }
