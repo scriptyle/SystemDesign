@@ -12,6 +12,7 @@
 }
 
 body {
+    background-color: var(--body_background-color, var(--color_neutral-100, hsla(0, 0%, 100%, 1)));
     font-size: 100%;
 }
 
@@ -90,6 +91,15 @@ meter {
     all: revert;
 }
 
+@media (prefers-color-scheme: dark) {
+    body {
+       --body_background-color: var(--dark_body_background-color, var(--color_neutral-100, hsla(0, 0%, 0%, 1)));
+    }
+
+    ::selection {
+        --selection_color: var(--dark_selection_color, var(--color_neutral-90, hsla(0, 0%, 10%, 1)));
+    }
+}
 
 /* ----------- */
 .news-card {

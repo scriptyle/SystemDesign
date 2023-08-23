@@ -103,3 +103,28 @@
     --opacity_level-4: 0.80;
     --opacity_none: 1;
 }
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        /*
+            <Color /> 
+        */
+        /* --color_primary:;
+        --color_secondary:;
+        --color_tertiary:; */
+        --color_typograph: var(--color_neutral-0, hsla(0, 0%, 100%, 1));
+
+        /* => Neutrals */
+        --color_neutral-0: hsla(0, 0%, 100%, 1);
+        --color_neutral-10: hsla(0, 0%, 90%, 1);
+        --color_neutral-20: hsla(0, 0%, 80%, 1);
+        --color_neutral-30: hsla(0, 0%, 70%, 1);
+        --color_neutral-40: hsla(0, 0%, 60%, 1);
+        --color_neutral-50: hsla(0, 0%, 50%, 1);
+        --color_neutral-60: hsla(0, 0%, 40%, 1);
+        --color_neutral-70: hsla(0, 0%, 30%, 1);
+        --color_neutral-80: hsla(0, 0%, 20%, 1);
+        --color_neutral-90: hsla(0, 0%, 10%, 1);
+        --color_neutral-100: hsla(0, 0%, 0%, 1);
+    }
+}

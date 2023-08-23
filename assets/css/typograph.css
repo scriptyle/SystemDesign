@@ -60,3 +60,27 @@
     letter-spacing: var(--p_letter-spacing, var(--letter-spacing_medium, 0.04rem));
     line-height: var(--p_line-height, var(--line-height_large, 3%));
 }
+/* => MODE DARK */
+@media (prefers-color-scheme: dark) {
+    :where(h1, .title-h1) {
+        color: var(--dark_h1_color, var(--color_typograph, hsla(0, 0%, 100%, 1)));
+    }
+    :where(h2, .title-h2) {
+        color: var(--dark_h2_color, var(--color_typograph, hsla(0, 0%, 100%, 1)));
+    }
+    :where(h3, .title-h3) {
+        color: var(--dark_h3_color, var(--color_typograph, hsla(0, 0%, 100%, 1)));
+    }
+    :where(h4, .title-h4) {
+        color: var(--dark_h4_color, var(--color_typograph, hsla(0, 0%, 100%, 1)));
+    }
+    :where(h5, .title-h5) {
+        color: var(--dark_h5_color, var(--color_typograph, hsla(0, 0%, 100%, 1)));
+    }
+    :where(h6, .title-h6) {
+        color: var(--dark_h6_color, var(--color_typograph, hsla(0, 0%, 100%, 1)));
+    }
+    :where(p, .text) {
+        color: var(--dark_p_color, var(--color_typograph, hsla(0, 0%, 100%, 1)));
+    }
+}

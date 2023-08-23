@@ -24,13 +24,39 @@
 }
 :where(button, .bt, input[type="submit"]) > :where(svg, img) {
     fill: var(--button-icon_fill, transparent);
-    stroke: var(--button-icon_stroke, var(--color_neutral_100, hsla(0, 0%, 100%, 1)));
+    stroke: var(--button-icon_stroke, var(--color_neutral-100, hsla(0, 0%, 100%, 1)));
     max-width: var(--button-icon_max-width, 16px);
     width: var(--button-icon_max-width, 100%);
 }
 :where(button, .bt, input[type="submit"]):where(:hover, :focus, :visited) {
-    --button_background-color: var(--color_neutral-30, hsla(0, 0%, 30%, 1))
+    --button_background-color: var(--color_neutral-30, hsla(0, 0%, 30%, 1));
 }
 :where(button, .bt, input[type="submit"]):active {
-    --button_background-color: var(--color_neutral-40, hsla(0, 0%, 40%, 1))
+    --button_background-color: var(--color_neutral-40, hsla(0, 0%, 40%, 1));
+}
+:where(button, .bt, input[type="submit"]):disabled {
+    --button_background-color: var(--color_neutral-60, hsla(0, 0%, 60%, 1));
+    --button_color: var(--color_neutral-);
+    --button_cursor: not-allowed;
+    --button_pointer-events: none;
+}
+/* => MODE DARK */
+@media (prefers-color-scheme: dark) {
+    :where(button, .bt, input[type="submit"]) {
+        --button_background-color: var(--dark_button_background-color, var(--color_neutral-0, hsla(0, 0%, 100%, 1)));
+        --button_border-color: var(--dark_button_background-color, var(--color_neutral-20, hsla(0, 0%, 80%, 1)));
+        --button_color: var(--dark_button_background-color, var(--color_neutral-100, hsla(0, 0%, 100%, 1)));
+    }
+    :where(button, .bt, input[type="submit"]) > :where(svg, img) {
+        --button-icon_stroke: var(--dark_button-icon_stroke, var(--color_neutral-100, hsla(0, 0%, 0%, 1)));
+    }
+    :where(button, .bt, input[type="submit"]):where(:hover, :focus, :visited) {
+        --button_background-color: var(--dark_button_background-color, var(--color_neutral-10, hsla(0, 0%, 90%, 1)))
+    }
+    :where(button, .bt, input[type="submit"]):active {
+        --button_background-color: var(--dark_button_background-color, var(--color_neutral-20, hsla(0, 0%, 80%, 1)));
+    }
+    :where(button, .bt, input[type="submit"]):disabled {
+        --button_background-color: var(--dark_button_background-color, var(--color_neutral-10, hsla(0, 0%, 90%, 1)));
+    }
 }
